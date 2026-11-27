@@ -20,6 +20,7 @@ agent = agents.Agent(
     model="mistral-large-4",
     name="cv-agent",
     instructions=INSTRUCTIONS,
+    connectors=[agents.connector("web_search")],
 )
 
 
